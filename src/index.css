@@ -1,0 +1,158 @@
+/* styles.css */
+/* reset.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Asset&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Kranky&family=Noto+Color+Emoji&family=Rye&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Asset&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Kranky&family=Noto+Color+Emoji&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: 'Rye',serif;
+  
+}
+html, body {
+  font-family: sans-serif;
+  line-height: 1.5;
+
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;}
+body.light {
+  background-color: #f5ccd6;
+  color: #000000;
+  justify-content: space-around;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.btn{
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  border-color: #94939364;
+  background-color: #dc6889;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover{
+background-color: #ad2d51;
+}
+.btn-delete{
+  background-color: rgb(148, 13, 13);
+  color: #ffffff;
+  margin-left: 5px;
+  padding: 15px 30px;
+}
+.btn-delete:hover{
+background-color: rgb(178, 28, 28);;
+}
+.btn-edit{
+  margin-left: 10px;
+  padding: 15px 30px;
+}
+
+/* customform */
+.wrapper{
+ 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.addTodo > .btn{
+  margin-top: 60px;
+ height: 50px;
+ width: 50px;
+
+
+}
+.label{
+  font-size: 30px;
+  font-family: "Caveat", cursive
+}
+.input{
+  font-size: 20px;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px ;
+  color: rgb(10, 8, 8);
+  border: none;
+  /* border-color: #94939364; */
+  background-color: #f2e7ea;
+  font-family:'Merriweather';
+  text-align: center;
+  box-shadow: 0 0 0 3px rgba(118, 119, 120, 0.1);
+ 
+}
+li{
+  font-family: 'Caveat'
+}
+/* //taskItem */
+.btns-container{
+  display: flex;
+  flex-direction: column-reverse;
+  
+}
+.theme-div{
+  margin-top: 0px;
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  
+}
+.toggle-theme {
+  padding-top:60px;
+ 
+  margin-top: 100px;
+  align-items: flex-start;
+}
+.toggle-theme > div{
+  display: flex;
+  justify-content: center;
+}
+.toggle-theme-btn{
+  align-self: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+ margin-right: 4px;
+background-color: #f5ccd6;
+  font-size: 16px;
+  cursor: pointer;
+}
+input[type="checkbox"]{
+ height: 18px;
+ width: 18px;
+  accent-color: #ad2d51
+}
+.edit-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width:100%;
+  background-color: #ffffffe9;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
